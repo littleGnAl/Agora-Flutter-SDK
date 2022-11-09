@@ -4,33 +4,6 @@ import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-void main() => runApp(const MyApp());
-
-/// This widget is the root of your application.
-class MyApp extends StatefulWidget {
-  /// Construct the [MyApp]
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('APIExample'),
-          ),
-          body: const JoinChannelVideoToken()),
-    );
-  }
-}
-
 class JoinChannelVideoToken extends StatefulWidget {
   const JoinChannelVideoToken({Key? key}) : super(key: key);
 
